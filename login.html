@@ -85,6 +85,7 @@ async function testResults () {
     }
     else {
       let PasID = await GetPassID()
+      console.log(PasID)
       window.sessionStorage.setItem("LoginData",JSON.stringify({ID:"89345",FECHA:fecha,CARNET:carnet}))
       window.location = `/future.html`
       //window.location ='http://telerad.medspazio.com.bo/future/_layouts/15/start.aspx#/Lists/ResultadosExamenes/Informes.aspx?FilterField1=CI&FilterValue1='+carnet+'&FilterField2=FechaNacimiento&FilterValue2='+fecha;
@@ -294,6 +295,7 @@ Santa Cruz - Bolivia</span></li>
   <script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
   <script src="js/main.js"></script>
+  <script src="/js/feching.js"></script>
     
   </body>
 </html>
