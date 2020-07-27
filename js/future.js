@@ -4,6 +4,7 @@ class ItemLista {
     constructor() {
     }
     agregaritem(cli){
+        console.log(cli)
         let item = `<li class="ItemLista">
         <div style="display: flex;align-items: center; font-size: 22px;">
             <span>${moment(cli.FECHA,"YYYYMMDD").format('DD/MM/YYYY')}</span>
@@ -53,7 +54,7 @@ function CerrarDialog(){
 async function Init(){
     
     if(window.sessionStorage.getItem("LoginData")==null){
-        alert("Para tener acceso a los datos deba iniciar secion")
+        alert("Para tener acceso a los datos debe iniciar secion")
         window.location = `/login.html`
     }
     
