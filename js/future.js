@@ -64,6 +64,7 @@ async function Init(){
     //
     let Clinetereq = await fetch(`https://future.medicaltecsrl.com:4443/Future/${CliId}`)
     let Cliente = await Clinetereq.json()
+    document.getElementById("CF").remove();
     if(Cliente.length>0){
         let Cli = new ItemLista()
         document.getElementById("NombrePaciente").innerHTML = Cli.EscribirNombre(Cliente[0].NOMBRE)

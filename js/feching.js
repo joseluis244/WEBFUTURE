@@ -1,7 +1,15 @@
-function GetPassID(){
+function GetPassID(carnet){
     return new Promise((Pres,Prej)=>{
-        fetch('https://jsonplaceholder.typicode.com/posts/1')
+        fetch(`/PHP/GetId.php?CI=${carnet}`)
         .then(response => response.json())
-        .then(json => Pres({ID:"89345"}))
+        .then( (json) =>{
+            if(json.existe){
+                Pres(json)
+            }
+            else{
+                alert("El paciente no existe")
+            }
+        }
+        )
     })
 }
