@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Future SRL - Imágenes Médicas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="https://www.future.com.bo/login/images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css"
+        href="https://www.future.com.bo/login/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css"
+        href="https://www.future.com.bo/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css"
+        href="https://www.future.com.bo/login/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="https://www.future.com.bo/login/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css"
+        href="https://www.future.com.bo/login/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css"
+        href="https://www.future.com.bo/login/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="https://www.future.com.bo/login/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css"
+        href="https://www.future.com.bo/login/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="https://www.future.com.bo/login/css/util.css">
+    <link rel="stylesheet" type="text/css" href="https://www.future.com.bo/login/css/main.css">
+    <link rel="stylesheet" href="https://www.future.com.bo/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.future.com.bo/css/animate.css">
+
+    <link rel="stylesheet" href="https://www.future.com.bo/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://www.future.com.bo/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://www.future.com.bo/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="https://www.future.com.bo/css/aos.css">
+
+    <link rel="stylesheet" href="https://www.future.com.bo/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="https://www.future.com.bo/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="https://www.future.com.bo/css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="https://www.future.com.bo/css/flaticon.css">
+    <link rel="stylesheet" href="https://www.future.com.bo/css/icomoon.css">
+    <link rel="stylesheet" href="https://www.future.com.bo/css/style.css">
+
+
+
+    <!--===============================================================================================-->
+</head>
+
+<body>
+    <nav class="navbar py-4 navbar-expand-lg ftco_navbar navbar-light bg-light flex-row">
+        <div class="container">
+            <div class="row no-gutters d-flex align-items-start align-items-center px-3 px-md-0">
+                <div class="col-lg-2 pr-4 align-items-center">
+
+                    <a class="navbar-brand" href="index.html"><img src="https://www.future.com.bo/images/logo.png"
+                            alt="Smiley face" height="42"></a>
+                </div>
+                <div class="col-lg-10 d-none d-md-block">
+                    <div class="row d-flex">
+                        <div class="col-md-4 pr-4 d-flex topper align-items-center">
+                            <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span
+                                    class="icon-map"></span></div>
+                            <span class="text">Dirección: Av. Cañoto #580</span>
+                        </div>
+                        <div class="col-md pr-4 d-flex topper align-items-center">
+                            <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span
+                                    class="icon-paper-plane"></span></div>
+                            <span class="text">Email: info@future.com.bo</span>
+                        </div>
+                        <div class="col-md pr-4 d-flex topper align-items-center">
+                            <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span
+                                    class="icon-phone2"></span></div>
+                            <span class="text">Telf: +591 314-33333</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END nav -->
+    <style>
+        .ItemLista {
+            display: grid;
+            grid-template-columns: 1fr 120px 120px;
+            user-select: none;
+            margin-bottom: 10px;
+        }
+        .botonItem{
+            padding: 10px;
+            width: 110px;
+            border-radius: 5px;
+            transition: linear 50ms;
+        }
+        .botonItem:hover{
+            width: 115px;
+        }
+        .botonItem:active{
+            width: 100px;
+        }
+        .BtnsItems{
+            display: flex;
+            justify-content: center;
+        }
+        .dialogError{
+            position: fixed;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0000004f;
+            z-index: 100;
+        }
+        .dialogError .dialogErrorDial{
+            background-color: #f8f9fa;
+            width: 400px;
+            height: 400px;
+            border-radius: 5px;
+            position: relative;
+        }
+        .dialogError .dialogErrorDial .dialogErrorCerrar{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 20px;
+            height: 20px;
+            user-select: none;
+        }
+        .dialogError .dialogErrorDial .dialogErrorTexto{
+            position: absolute;
+            top: 25px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+    <h2 id="NombrePaciente" style="margin-left: 15px;"></h2>
+    <div class="ContenedorLista" style="padding: 10px; min-height: 400px;">
+        <ul id="ListaDeEstudiosPaciente">
+            
+        </ul>
+    </div>
+
+    <!--footer-->
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-5">
+                        <h2 class="ftco-heading-2 logo"><span>FUTURE SRL.</span></h2>
+                        <p>Un Centro de Diagnóstico por Imagen con amplia experiencia en la salud.</p>
+                    </div>
+                    <div class="ftco-footer-widget mb-5">
+                        <h2 class="ftco-heading-2">Tienes preguntas?</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon icon-map-marker"></span><span class="text">Edif. Centro Médico
+                                        Niño Jesús,
+                                        Planta baja, Av. Cañoto #580
+                                        Santa Cruz - Bolivia</span></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+591
+                                            314-3333</span></a></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+591
+                                            314-3100</span></a></li>
+                                <li><a href="#"><span class="icon icon-envelope"></span><span
+                                            class="text">info@future.com.bo</span></a></li>
+                            </ul>
+                        </div>
+
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                            <!--  <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li> -->
+                            <li class="ftco-animate"><a href="https://www.facebook.com/FutureBolivia/"><span
+                                        class="icon-facebook"></span></a></li>
+                            <!--    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-5 ml-md-4">
+                        <h2 class="ftco-heading-2">Links</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Bienvenidos</a></li>
+                            <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Sobre nosotros</a>
+                            </li>
+                            <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Servicios</a></li>
+                            <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Nuestros
+                                    Especialistas</a></li>
+                            <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="ftco-footer-widget mb-5 ml-md-4">
+                        <h2 class="ftco-heading-2">Servicios</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Tomografía
+                                    Multicorte</a></li>
+                            <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Endoscopia</a></li>
+                            <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Resonancia
+                                    Magnética</a></li>
+                            <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Tomografía Dental</a>
+                            </li>
+                            <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Mamografía Digital</a>
+                            </li>
+                            <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Rayos X</a></li>
+                            <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Ecografía</a></li>
+                            <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Gamagrafía</a></li>
+                            <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Densitometría</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-5">
+                        <h2 class="ftco-heading-2">Horarios de Atención</h2>
+                        <h3 class="open-hours pl-4"><span class="ion-ios-time mr-3"></span>Lunes a Viernes de 08:00am a
+                            13:00pm y 14:00pm a 19:30pm</h3>
+                        <h3 class="open-hours pl-4"><span class="ion-ios-time mr-3"></span>Sábados de 08:00am a 13:00pm
+                        </h3>
+                        <h3 class="open-hours pl-4"><span class="ion-ios-time mr-3"></span>Emergencias 24hrs</h3>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <p>
+                        <!-- Linithk back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved | FUTURE SRL <i class="icon-heart" aria-hidden="true"></i> by <a
+                            href="https://www.facebook.com/FutureBolivia/" target="_blank">Future SRL</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" /></svg></div>
+
+
+    <script src="https://www.future.com.bo/js/jquery.min.js"></script>
+    <script src="https://www.future.com.bo/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="https://www.future.com.bo/js/popper.min.js"></script>
+    <script src="https://www.future.com.bo/js/bootstrap.min.js"></script>
+    <script src="https://www.future.com.bo/js/jquery.easing.1.3.js"></script>
+    <script src="https://www.future.com.bo/js/jquery.waypoints.min.js"></script>
+    <script src="https://www.future.com.bo/js/jquery.stellar.min.js"></script>
+    <script src="https://www.future.com.bo/js/owl.carousel.min.js"></script>
+    <script src="https://www.future.com.bo/js/jquery.magnific-popup.min.js"></script>
+    <script src="https://www.future.com.bo/js/aos.js"></script>
+    <script src="https://www.future.com.bo/js/jquery.animateNumber.min.js"></script>
+    <script src="https://www.future.com.bo/js/bootstrap-datepicker.js"></script>
+    <script src="https://www.future.com.bo/js/jquery.timepicker.min.js"></script>
+    <script src="https://www.future.com.bo/js/scrollax.min.js"></script>
+    <script
+        src="https://www.future.com.bo/https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false">
+    </script>
+    <script src="https://www.future.com.bo/js/google-map.js"></script>
+    <script src="https://www.future.com.bo/js/main.js"></script>
+
+
+    <!--===============================================================================================-->
+    <script src="https://www.future.com.bo/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="https://www.future.com.bo/vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="https://www.future.com.bo/vendor/bootstrap/js/popper.js"></script>
+    <script src="https://www.future.com.bo/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="https://www.future.com.bo/vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="https://www.future.com.bo/vendor/daterangepicker/moment.min.js"></script>
+    <script src="https://www.future.com.bo/vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="https://www.future.com.bo/vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="https://www.future.com.bo/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="./future.js"></script>
+</body>
+
+</html>
