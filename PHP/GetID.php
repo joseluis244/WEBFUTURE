@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "medicaltecmysql";
-$password = "Medicaltec310188$";
+$username = "XXXXXXXXXXX";
+$password = "XXXXXXXXXXXX$";
 $CI = $_GET["CI"];
 
 // Create connection
