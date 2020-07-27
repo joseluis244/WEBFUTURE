@@ -52,10 +52,11 @@ function CerrarDialog(){
 }
 async function Init(){
     
-    console.log(window.location.hash)
-    //let CliId=window.location.hash.split("#")[1].split("&")[0]
-    //fecha=window.location.hash.split("#")[1].split("&")[1];
-    //carnet=window.location.hash.split("#")[1].split("&")[2];
+    if(window.sessionStorage.getItem("LoginData")==null){
+        alert("Para tener acceso a los datos deba iniciar secion")
+        window.location = `/login.html`
+    }
+    
     let CliId=JSON.parse(window.sessionStorage.getItem("LoginData")).ID
     fecha=JSON.parse(window.sessionStorage.getItem("LoginData")).FECHA
     carnet=JSON.parse(window.sessionStorage.getItem("LoginData")).CARNET
