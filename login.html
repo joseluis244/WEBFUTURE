@@ -84,8 +84,8 @@ async function testResults () {
       alert ("Tiene que ingresar el número de examen en el campo editable");
     }
     else {
-      let PasID = await GetPassID(carnet)
-      window.sessionStorage.setItem("LoginData",JSON.stringify({ID:PasID.ID,FECHA:fecha,CARNET:carnet}))
+      let PasID = await GetPassID(carnet,fecha)
+      window.sessionStorage.setItem("LoginData",JSON.stringify({ID:PasID.ID,FECHA:fecha,CARNET:carnet,NOMBRE:PasID.NOMBRE}))
       window.location = `future.html`
       //window.location ='http://telerad.medspazio.com.bo/future/_layouts/15/start.aspx#/Lists/ResultadosExamenes/Informes.aspx?FilterField1=CI&FilterValue1='+carnet+'&FilterField2=FechaNacimiento&FilterValue2='+fecha;
     }

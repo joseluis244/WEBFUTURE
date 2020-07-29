@@ -1,5 +1,6 @@
 var fecha;
 var carnet;
+var pasnombre;
 class ItemLista {
     constructor() {
     }
@@ -61,20 +62,21 @@ async function Init(){
     let CliId=JSON.parse(window.sessionStorage.getItem("LoginData")).ID
     fecha=JSON.parse(window.sessionStorage.getItem("LoginData")).FECHA
     carnet=JSON.parse(window.sessionStorage.getItem("LoginData")).CARNET
+    pasnombre=JSON.parse(window.sessionStorage.getItem("LoginData")).NOMBRE
     //
+    document.getElementById("NombrePaciente").innerHTML = pasnombre
     let Clinetereq = await fetch(`https://future.medicaltecsrl.com:4443/Future/${CliId}`)
     let Cliente = await Clinetereq.json()
     document.getElementById("CF").remove();
     if(Cliente.length>0){
         let Cli = new ItemLista()
-        document.getElementById("NombrePaciente").innerHTML = Cli.EscribirNombre(Cliente[0].NOMBRE)
         for (let index = 0; index < Cliente.length; index++) {
             const element = Cliente[index];
             Cli.agregaritem(element)
         }
     }
     else{
-        document.getElementById("NombrePaciente").innerHTML = "Registro Inexistente"
+        document.getElementById("ListaDeEstudiosPaciente").innerHTML = "No existen imagenes guardadas"
     }
 }
 Init()
