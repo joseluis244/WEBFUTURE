@@ -1,6 +1,6 @@
-function GetPassID(carnet,FN){
+function GetPassID(carnet){
     return new Promise((Pres,Prej)=>{
-        fetch(`/PHP/GetID.php?CI=${carnet}&FN=${FN}`)
+        fetch(`PHP/GetID.php?CI=${carnet}`)
         .then(response => response.json())
         .then( (json) =>{
             if(json.existe){

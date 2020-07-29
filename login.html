@@ -84,9 +84,9 @@ async function testResults () {
       alert ("Tiene que ingresar el número de examen en el campo editable");
     }
     else {
-      let PasID = await GetPassID(carnet,fecha)
-      window.sessionStorage.setItem("LoginData",JSON.stringify({ID:PasID.ID,FECHA:fecha,CARNET:carnet,NOMBRE:PasID.NOMBRE}))
-      window.location = `/future.html`
+      let PasID = await GetPassID(carnet)
+      window.sessionStorage.setItem("LoginData",JSON.stringify({ID:PasID.ID,FECHA:fecha,CARNET:carnet}))
+      window.location = `future.html`
       //window.location ='http://telerad.medspazio.com.bo/future/_layouts/15/start.aspx#/Lists/ResultadosExamenes/Informes.aspx?FilterField1=CI&FilterValue1='+carnet+'&FilterField2=FechaNacimiento&FilterValue2='+fecha;
     }
 }
@@ -279,22 +279,22 @@ Santa Cruz - Bolivia</span></li>
 
 
   <!--===============================================================================================-->
-  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+  <script src="login/vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
-  <script src="vendor/animsition/js/animsition.min.js"></script>
+  <script src="login/vendor/animsition/js/animsition.min.js"></script>
 <!--===============================================================================================-->
-  <script src="vendor/bootstrap/js/popper.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="login/vendor/bootstrap/js/popper.js"></script>
+  <script src="login/vendor/bootstrap/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
-  <script src="vendor/select2/select2.min.js"></script>
+  <script src="login/vendor/select2/select2.min.js"></script>
 <!--===============================================================================================-->
-  <script src="vendor/daterangepicker/moment.min.js"></script>
-  <script src="vendor/daterangepicker/daterangepicker.js"></script>
+  <script src="login/vendor/daterangepicker/moment.min.js"></script>
+  <script src="login/vendor/daterangepicker/daterangepicker.js"></script>
 <!--===============================================================================================-->
-  <script src="vendor/countdowntime/countdowntime.js"></script>
+  <script src="login/vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
   <script src="js/main.js"></script>
-  <script src="/js/feching.js"></script>
+  <script src="js/feching.js"></script>
     
   </body>
 </html>
